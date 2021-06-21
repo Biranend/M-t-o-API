@@ -35,7 +35,7 @@ input {
   border: none;
   background: none;
   outline: none;
-  color: inherit;
+  color: inherit; 
 }
 
 img {
@@ -68,6 +68,12 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-banner {
   color: var(--text_light);
+  position: relative;
+  left: 20%;
+}
+.cntr{
+  position: relative;
+  left: 5%;
 }
 
 .heading {
@@ -91,7 +97,7 @@ body {
 }
 
 .top-banner form input::-moz-placeholder {
-  color: currentColor; 
+  color: currentColor;
 }
 
 .top-banner form input:-ms-input-placeholder {
@@ -197,6 +203,7 @@ body {
   font-size: 1.4rem;
   color: var(--text_light);
   margin-top: 40px;
+  text-align: center;
 }
 
 .page-footer span {
