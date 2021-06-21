@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   let inputVal = input.value;
 
-  //check if there's already a city
+  //Vérifier s'il y'a déja une ville
   const listItems = list.querySelectorAll(".ajax-section .city");
   const listItemsArray = Array.from(listItems);
 
@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
       let content = "";
       //athens,gr
       if (inputVal.includes(",")) {
-        //athens,grrrrrr->invalid country code, so we keep only the first part of inputVal 
+        //athens,grrrrrr->code de pays invalid, nous ne garderons donc que la première partie de inputVal 
         if (inputVal.split(",")[1].length > 2) {
           inputVal = inputVal.split(",")[0];
           content = el
